@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+
+ nginx:
+  build: ./nginx
+  volumes:
+   - /var/ftpdata:/var/nginx/DropLocation
+   - /var/log/nginx:/var/log/nginx
+  ports:
+   - "80:80"
+   - "443:443"
+ ftp:
+  build: ./ftp
+  volumes:
+   - /var/ftpdata:/var/vsftpd/ftpuser/
+   - /var/log/vsfptd:/var/log/vsftpd
+  environment:
+   FTP_USER: ftpuser
+   FTP_PASSWD: "Tdy7MJYekc$kU4avj{X]3LKW"
+  ports:
+   - "20:20"
+   - "21:21"
+   - "65000:65000"
+   - "65001:65001"
