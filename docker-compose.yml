@@ -17,7 +17,7 @@ services:
    - /var/log/vsfptd:/var/log/vsftpd
   environment:
    FTP_USER: ftpuser
-   FTP_PASSWD: "Tdy7MJYekc$kU4avj{X]3LKW"
+   FTP_PASSWD: "*************"
   ports:
    - "20:20"
    - "21:21"
