@@ -10,7 +10,7 @@ RUN apt-get update \
 
 
 ENV FTP_USER=ftpuser \
-    FTP_PASS="Tdy7MJYekc\$kU4avj{X]3LKW]" \
+    FTP_PASS="Tdy7MJYekc\$kU4avj{XW]" \
     PASV_ADDRESS=127.0.0.1 \
     PASV_MIN_PORT=65000 \
     PASV_MAX_PORT=65001
